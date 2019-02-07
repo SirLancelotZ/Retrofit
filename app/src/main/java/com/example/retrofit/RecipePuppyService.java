@@ -11,5 +11,10 @@ public interface RecipePuppyService {
     Call<RecipeResponse> searchByIngredient(
         @Query("i") String ingredients,
         @Query("q") String recipeKeywords);
-
+    @GET("api/")
+    Call<RecipeResponse> searchByIngredientAndPage(
+            @Query("p") int page,
+            @Query("i") String ingredients,
+            @Query("q") String recipeKeywords);
 }
+

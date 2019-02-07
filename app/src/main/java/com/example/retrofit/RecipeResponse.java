@@ -11,26 +11,9 @@ public class RecipeResponse {
     private String href;
     private List<Recipe> results;
 
-    public Recipe{
 
-    };
-
-
-
-
-    public RecipeResponse(double version) {
-        this.version = version;
+    public RecipeResponse() {
     }
-
-
-    public RecipeResponse(List<Recipe> results) {
-        this.results = results;
-    }
-
-    public RecipeResponse(String title) {
-        this.title = title;
-    }
-
 
 
     public String getTitle() {
